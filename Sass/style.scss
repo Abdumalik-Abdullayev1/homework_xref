@@ -1,0 +1,27 @@
+@import "./reset";
+@import "./header";
+@import "./hero";
+@import "./introduction";
+@import "./platform";
+
+.teams{
+    margin-top: 80px;
+    &_title{
+        display: grid;
+        grid-template-columns: 40% auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_left{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &_cards{
+            display: grid;
+            grid-template-columns: auto auto;
+            &_card{
+                border-bottom: 2px solid;
+            }
+        }
+    }
+}

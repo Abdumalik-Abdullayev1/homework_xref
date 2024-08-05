@@ -1,0 +1,50 @@
+.header {
+    position: fixed;
+    box-shadow: 0 0 10px;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 80% auto;
+    align-items: center;
+
+    &_lists_link {
+        border-radius: 10px;
+        color: #000;
+        padding: 10px 15px;
+        transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+        &:hover {
+            color: rgba(225, 255, 160, 1);
+            box-shadow: inset 200px 0 0 0 rgba(22, 64, 56, 1);
+        }
+    }
+    &_btns {
+        display: flex;
+        gap: 20px;
+        &_login {
+            font-size: 18px;
+            border: none;
+            background-color: transparent;
+            padding: 0 20px;
+            &:hover {
+                transform: translate(-2rem);
+                transition: all 1s;
+                background-color: rgba(22, 64, 56, 1);
+                color: rgba(225, 255, 160, 1);
+                border-radius: 100px;
+            }
+        }
+        &_demo {
+            font-size: 18px;
+            border-radius: 100px;
+            border: none;
+            color: rgba(225, 255, 160, 1);
+            background-color: rgba(22, 64, 56, 1);
+            padding: 11px 20px;
+            &:hover {
+                transform: scale(1.2);
+                transition: all 0.5s;
+            }
+        }
+    }
+}
